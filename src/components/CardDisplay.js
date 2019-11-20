@@ -13,7 +13,7 @@ export default function CardDisplay ({limit}) {
         console.log(response.data);
         setCardInfo(response.data);
       });
-  });
+  }, {});
 
 
 
