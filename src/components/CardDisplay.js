@@ -8,7 +8,7 @@ export default function CardDisplay ({limit}) {
 
   useEffect(() => {
     axios
-      .get(`https://api.nasa.gov/planetary/apod?api_key=BSWSQP6BLrCtuvUEZI3Hq7CWSGe3k5ejg091vHa7`)
+      .get(`https://api.nasa.gov/planetary/apod?api_key=wn0a4qml9WdoA3t7lgNhYBv3qUxfYr7IdKa2t12p`)
       .then(response => {
         console.log(response.data);
         setCardInfo(response.data);
