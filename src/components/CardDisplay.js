@@ -4,7 +4,7 @@ import Card from "./card";
 
 export default function CardDisplay ({limit}) {
   const [cardInfo, setCardInfo] = useState({});
-  const [randomPhoto, setRandomPhoto] = useState('');
+
 
   useEffect(() => {
     axios
@@ -16,16 +16,14 @@ export default function CardDisplay ({limit}) {
   }, {});
 
 
-
   return (
-    <div className = "container">
+    <div className ="container">
       <Card
       key  = {cardInfo.url}
       title = {cardInfo.title}
       date = {cardInfo.date}
       url = {cardInfo.url}
       explanation = {cardInfo.explanation} />
-      <button>Refresh Photo</button>
 
     </div>
   );
